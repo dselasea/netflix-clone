@@ -35,8 +35,12 @@ nav a {
   color: white;
   background: #d81f26;
   display: inline-block;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 5px;
+}
+
+.logo {
+  width: 134px;
 }
 
 .header {
@@ -44,7 +48,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
-  height: 90vh;
+  height: 730px;
   position: relative;
   border-bottom: 8px solid #333;
   text-align: center;
@@ -63,8 +67,7 @@ nav a {
   text-align: center;
 }
 
-.header__content,
-.section__question--form {
+.header__content {
   color: white;
   padding-top: 4rem;
   min-width: 300px;
@@ -117,24 +120,31 @@ section {
   padding-bottom: 3rem;
 }
 
+.downloading {
+  color: blue;
+}
+
 img {
   max-width: 100%;
 }
 
 .image__tv {
   position: relative;
-  z-index: 1;
 }
 
-.image__tv--video video {
+/* .image__tv img {
+  z-index: -1;
+} */
+
+/* .image__tv video {
   position: absolute;
-  top: 80%;
-  left: 13%;
-  max-width: 100%;
-  height: 100%;
-  max-width: 73%;
-  max-height: 90%;
-}
+  top: 0;
+  left: 11.2%;
+  width: 55%;
+  height: 85%;
+  max-width: 65%;
+  max-height: 86%;
+} */
 
 .section__enjoy--heading,
 .section__download--heading,
@@ -157,13 +167,21 @@ img {
 }
 
 .stranger-things {
-  border: 2px solid #333;
+  border: 3px solid #333;
   /* position: absolute; */
   width: 70%;
-  padding: 0.5rem;
+  padding: 1.5rem;
   border-radius: 10px;
   display: flex;
+  justify-content: flex-start;
+}
+
+.stranger-things div {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin-left: 1rem;
+  width: 100%;
 }
 
 .stranger-things h3,
@@ -231,14 +249,12 @@ footer li a {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 960px) {
   .header {
-    height: 80vh;
+    height: 800px;
   }
 
-  .header__content,
-  .section__question--form {
-    /* padding-top: 1rem; */
+  .header__content {
     font-weight: 700;
     font-size: 1.4rem;
     font-size: 2.3rem;
@@ -273,7 +289,7 @@ footer li a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75%;
+    width: 78%;
     margin: auto;
     align-items: center;
     padding: 3rem;
